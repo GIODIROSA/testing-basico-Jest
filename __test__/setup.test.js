@@ -4,4 +4,10 @@ afterAll(() => console.log("Despues de todas las pruebas"));
 
 //antes de cada prueba
 beforeAll(() => console.log("antes de todas las pruebas"));
-beforeEach(()=> console.log("antes de cada prueba"));
+beforeEach(() => console.log("antes de cada prueba"));
+
+describe("Preparando antes de la prueba", () => {
+  test("Es verdadero", () => {
+    expect(true).toBeTruthy();
+  });
+});
